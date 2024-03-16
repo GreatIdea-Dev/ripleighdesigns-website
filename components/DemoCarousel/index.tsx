@@ -19,7 +19,7 @@ const designs = [
   },
   {
     id: 4,
-    title: 'M X S Shirt',
+    title: 'MS Shirt',
     href: '/portfolio',
     imageUrl: '/ms-shirt.jpeg',
   },
