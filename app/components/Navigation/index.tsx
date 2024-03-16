@@ -31,13 +31,13 @@ export default function Navigation() {
         <div className="flex justify-end items-center flex-1">
           <div className="hidden md:flex md:gap-x-12">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
                 className="text-sm font-semibold leading-6 text-gray-900 hover:text-violet-600"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex md:hidden">
