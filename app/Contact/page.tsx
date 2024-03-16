@@ -1,8 +1,13 @@
-export default function Page() {
+import CTA from "../../components/CTA";
+import DemoCarousel from "../../components/DemoCarousel";
+import Hero from "../../components/Hero";
+
+export default function Contact() {
   return (
-    <>
-      <h1>This is the Contact Page</h1>
-      <p>Stuff goes here</p>
-    </>
+    <main>
+      <Hero />
+      <DemoCarousel />
+      <CTA />
+    </main>
   );
 }
