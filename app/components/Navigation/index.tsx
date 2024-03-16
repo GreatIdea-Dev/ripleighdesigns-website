@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Services", href: "/services" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Portfolio", href: "/Portfolio" },
+  { name: "Services", href: "/Services" },
+  { name: "About", href: "/About" },
+  { name: "Contact", href: "/Contact" },
 ];
 
 export default function Navigation() {
