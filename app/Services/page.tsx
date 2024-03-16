@@ -1,4 +1,4 @@
-export default function Services() {
+export default function Page() {
   return (
     <>
       <h1>This is the Services Page</h1>
