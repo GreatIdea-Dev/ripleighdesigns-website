@@ -1,13 +1,9 @@
-import CTA from '../../components/CTA';
-import DemoCarousel from '../../components/DemoCarousel';
-import Hero from '../../components/Hero';
+import ContactForm from '@/components/ContactForm';
 
 export default function Contact() {
   return (
     <main>
-      <Hero />
-      <DemoCarousel />
-      <CTA />
+      <ContactForm />
     </main>
   );
 }
