@@ -1,10 +1,15 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 'use client';
+
+import { useRouter } from 'next/navigation';
+import type { FormEvent } from 'react';
+
 export default function ContactForm() {
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.stopPropagation();
+  const router = useRouter();
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -15,19 +20,21 @@ export default function ContactForm() {
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        access_key: 'ea67efe1-0b54-4409-a013-e49ad616bfc6',
+        access_key: '503d5901-a4ac-458b-a5e8-4e8e28d220b2',
         firstName: formData.get('firstName'),
         lastName: formData.get('lastName'),
         email: formData.get('email'),
+        phone: formData.get('phone'),
         services: formData.get('services'),
         message: formData.get('message'),
       }),
     });
     const result = await response.json();
     if (result.success) {
-      window.alert(result.message);
+      router.push('/success');
     }
   }
+
   return (
     <div className='w-full px-8 flex flex-col items-center justify-center'>
       <div className='p-8 max-w-3xl flex flex-col justify-center items-center gap-4'>

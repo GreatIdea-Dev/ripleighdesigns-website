@@ -29,7 +29,7 @@ export default function Banner() {
       </div>
       <p className='text-sm leading-6 text-gray-900'>
         <a href='#'>
-          <strong className='font-semibold'>GeneriCon 2023</strong>
+          <strong className='font-semibold'></strong>
           <svg
             viewBox='0 0 2 2'
             className='mx-2 inline h-0.5 w-0.5 fill-current'
@@ -37,7 +37,7 @@ export default function Banner() {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          Join us in Denver from June 7 – 9 to see what’s coming next&nbsp;
+          Give us a ring and let us know how we can bring your ideas to reality!
           <span aria-hidden='true'>&rarr;</span>
         </a>
       </p>
