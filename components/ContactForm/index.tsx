@@ -42,7 +42,7 @@ export default function ContactForm() {
         <div className='text-purple-950 w-full'>
           <Wordmark />
         </div>
-        <h1 className='text-6xl h-20 font-bold bg-gradient-to-bl from-purple-600 to-indigo-500 bg-clip-text text-transparent'>
+        <h1 className='text-6xl h-auto text-center font-bold bg-gradient-to-bl from-purple-600 to-indigo-500 bg-clip-text text-transparent'>
           Say Hello!
         </h1>
         <p className='text-xl px-4 text-center'>
