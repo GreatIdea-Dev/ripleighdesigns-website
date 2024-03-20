@@ -37,8 +37,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className='w-full px-8 flex flex-col items-center justify-center'>
-      <div className='p-8 max-w-3xl flex flex-col justify-center items-center gap-4'>
+    <div className='w-full px-1 md:px-8 flex flex-col items-center justify-center'>
+      <div className='p-4 md:p-8 max-w-3xl flex flex-col justify-center items-center gap-4'>
         <div className='text-purple-950 w-full'>
           <Wordmark />
         </div>
@@ -49,7 +49,7 @@ export default function ContactForm() {
           Drop us a line and let us know how we can turn your ideas into reality!
         </p>
       </div>
-      <div className='w-full p-16 flex flex-col items-center justify-center border-2 border-violet-500 max-w-3xl rounded-3xl'>
+      <div className='w-full p-8 md:p-16 flex flex-col items-center justify-center border-2 border-violet-500 max-w-3xl rounded-3xl'>
         <form
           className='flex flex-col items-center justify-center w-full gap-4'
           onSubmit={handleSubmit}
