@@ -22,12 +22,12 @@ export default function ContactForm() {
       },
       body: JSON.stringify({
         access_key: '503d5901-a4ac-458b-a5e8-4e8e28d220b2',
-        firstName: formData.get('firstName'),
-        lastName: formData.get('lastName'),
-        email: formData.get('email'),
-        phone: formData.get('phone'),
-        services: formData.get('services'),
-        message: formData.get('message'),
+        'First Name': formData.get('firstName'),
+        'Last Name': formData.get('lastName'),
+        'Email Address': formData.get('email'),
+        'Phone Number': formData.get('phone'),
+        'Interested in Services:': formData.get('services'),
+        Message: formData.get('message'),
       }),
     });
     const result = await response.json();
@@ -107,21 +107,22 @@ export default function ContactForm() {
           </div>
           <div className='flex flex-col items-start justify-center w-full gap-2'>
             <label className='font-medium text-large text-gray-600' htmlFor='services'>
-              Choose a service:
+              What services are you interested in?
             </label>
             <select
               name='services'
               className='border-2 border-gray-300 text-lg placeholder-gray-300 w-full px-2 py-3 bg-white rounded-lg focus:border-violet-500 focus-within:ring-0 focus:ring-offset-0 focus:outline-none'
             >
-              <option value='t-shirts'>T-shirts</option>
-              <option value='custom-branding'>Custom Branding</option>
-              <option value='logos'>Logos</option>
-              <option value='other'>Other</option>
+              <option value='T-Shirt Design'>T-shirts</option>
+              <option value='Custom Branding'>Custom Branding</option>
+              <option value='Logo Design'>Logos</option>
+              <option value='Merchandise'>Other</option>
+              <option value='Other'>Other</option>
             </select>
           </div>
           <div className='flex flex-col items-start justify-center w-full gap-2'>
             <label className='font-medium text-large text-gray-600' htmlFor='message'>
-              Your message
+              Your message:
             </label>
             <textarea
               id='message'
