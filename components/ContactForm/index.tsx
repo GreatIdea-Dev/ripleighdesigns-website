@@ -5,6 +5,7 @@
 
 import { useRouter } from 'next/navigation';
 import type { FormEvent } from 'react';
+import Wordmark from '../Wordmark';
 
 export default function ContactForm() {
   const router = useRouter();
@@ -38,6 +39,9 @@ export default function ContactForm() {
   return (
     <div className='w-full px-8 flex flex-col items-center justify-center'>
       <div className='p-8 max-w-3xl flex flex-col justify-center items-center gap-4'>
+        <div className='text-purple-950 w-full'>
+          <Wordmark />
+        </div>
         <h1 className='text-6xl h-20 font-bold bg-gradient-to-bl from-purple-600 to-indigo-500 bg-clip-text text-transparent'>
           Say Hello!
         </h1>
