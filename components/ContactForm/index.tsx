@@ -116,7 +116,7 @@ export default function ContactForm() {
               <option value='T-Shirt Design'>T-shirts</option>
               <option value='Custom Branding'>Custom Branding</option>
               <option value='Logo Design'>Logos</option>
-              <option value='Merchandise'>Other</option>
+              <option value='Merchandise'>Merchandise</option>
               <option value='Other'>Other</option>
             </select>
           </div>
