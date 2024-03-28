@@ -1,13 +1,44 @@
-import CTA from '../../components/CTA';
-import DemoCarousel from '../../components/DemoCarousel';
-import Hero from '../../components/Hero';
+import ServicesCard from '@/components/ServicesCard';
+
+const services = [
+  {
+    title: 'Graphic Design',
+    description: 'We design beautiful logos, posters, and more.',
+    features: ['Custom designs', 'High-quality images', 'Print-ready files'],
+    price: '399',
+  },
+  {
+    title: 'Custom Merchandising',
+    description: 'We design beautiful logos, posters, and more.',
+    features: ['Custom designs', 'High-quality images', 'Print-ready files'],
+    price: '399',
+  },
+  {
+    title: 'T-Shirt Printing',
+    description: 'We design beautiful logos, posters, and more.',
+    features: ['Custom designs', 'High-quality images', 'Print-ready files'],
+    price: '399',
+  },
+  {
+    title: 'Custom Artwork',
+    description: 'We design beautiful logos, posters, and more.',
+    features: ['Custom designs', 'High-quality images', 'Print-ready files'],
+    price: '399',
+  },
+  {
+    title: 'Photography',
+    description: 'We design beautiful logos, posters, and more.',
+    features: ['Custom designs', 'High-quality images', 'Print-ready files'],
+    price: '399',
+  },
+];
 
 export default function Services() {
   return (
     <main>
-      <Hero />
-      <DemoCarousel />
-      <CTA />
+      {services.map((service) => (
+        <ServicesCard key={service.title} {...service} />
+      ))}
     </main>
   );
 }
