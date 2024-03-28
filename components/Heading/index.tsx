@@ -5,7 +5,7 @@ interface IHeadingProps {
 }
 export default function Heading({ title, tophat, blurb }: IHeadingProps) {
   return (
-    <div className='bg-white px-6 py-1 lg:px-8'>
+    <div className='bg-white px-6 py-8 lg:px-8'>
       <div className='mx-auto max-w-2xl text-center'>
         <p className='text-base font-semibold leading-7 text-indigo-600'>{tophat}</p>
         <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
