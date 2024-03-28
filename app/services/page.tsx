@@ -1,3 +1,4 @@
+import Heading from '@/components/Heading';
 import ServicesCard from '@/components/ServicesCard';
 
 const services = [
@@ -36,6 +37,11 @@ const services = [
 export default function Services() {
   return (
     <main>
+      <Heading
+        title='Our Services'
+        tophat='What we offer'
+        blurb='We offer a variety of services to help you with your business needs.'
+      />
       {services.map((service) => (
         <ServicesCard key={service.title} {...service} />
       ))}
